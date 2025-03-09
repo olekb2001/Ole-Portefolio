@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1f2c35d72.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo-portfolio.png" alt="Portfolio Logo">
+            <div class="hamburger-menu" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Ole Kristian Berge</span></h1>
+                <p>I am currently pursuing a career as a <span>Front-End Developer</span>,
+                honing my skills in HTML, CSS, JavaScript, and other essential web technologies.
+                This portfolio showcases a collection of my previous projects, each reflecting my growth,
+                creativity, and technical abilities.</p>
+            </div>
+            <div class="hero-content-right">
+                <img src="img/Uten_tittel-1_1_optimized_200.png" alt="Hero Image">
+            </div>
+        </section>
+    </header>
+    <div class="scroll-container">
+        <i id= "scroll-down"class="fa-solid fa-circle-down"></i>
+    </div>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="img/rainydays.jpeg" alt="Rainy Days Project">
+                <h3>Rainy Days</h3>
+                <p>An eCommerce site for outdoor jackets with a user-friendly shopping experience.</p>
+                <a href="https://github.com/olekb2001/Rainy-Days-project" target="_blank">GitHub Repo</a>
+                <a href="https://olekb2001.github.io/Rainy-Days-project/" target="_blank">Live Website</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="img/museum.jpg" alt="Science Museum Project">
+                <h3>Science Museum</h3>
+                <p>A website for a fictional science museum, aimed at engaging young learners.</p>
+                <a href="https://github.com/olekb2001/Semester-Project" target="_blank">GitHub Repo</a>
+                <a href="https://olekb2001.github.io/Semester-Project/" target="_blank">Live Website</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="img/foodfeed.jpeg" alt="Exam Project">
+                <h3>The Food Feed</h3>
+                <p>A blog platform for food lovers to explore and share their favorite recipes.</p>
+                <a href="https://github.com/olekb2001/FED1-PE1-olekb2001-final" target="_blank">GitHub Repo</a>
+                <a href="https://67bb61ac347a7565251e18d7--thefoodfeed.netlify.app/" target="_blank">Live Website</a>
+            </div>
+        </div>
+    </section>   
+    <!-- Contact section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>For inquiries, collaborations, or just to say hello, feel free to reach out via email or social media.</p>
+                <div class="social-links">
+                    <div class="email-options">
+                        <a href="https://www.linkedin.com/in/ole-kristian-berge-85a427335/" target="_blank" class="social-icon linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:olekb2001@gmail.com" class="social-icon email">
+                            <i class="fas fa-envelope"></i> Open Mail App
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=olekb2001@gmail.com" class="social-icon gmail" target="_blank">
+                            <i class="fas fa-envelope"></i> Open in Gmail
+                        </a>
+                        <a href="https://outlook.live.com/mail/deeplink/compose?to=olekb2001@gmail.com" class="social-icon outlook" target="_blank">
+                            <i class="fas fa-envelope"></i> Open in Outlook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scroll-animation.js"></script>
+    <script src="navbar.js"></script>
+    <script src="card-animation.js"></script>
+</body>
+</html>

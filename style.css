@@ -172,6 +172,7 @@ nav ul li .scroll-btn:hover{
     font-size: 16px;
     color: #17252a;
     margin: 10px 0;
+    min-height: 85px;
 
 }
 .project-card a {

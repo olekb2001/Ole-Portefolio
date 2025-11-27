@@ -8,20 +8,25 @@
     <script src="https://kit.fontawesome.com/e1f2c35d72.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Poppins:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <nav>
             <img src="img/logo-portfolio.png" alt="Portfolio Logo">
             <div class="hamburger-menu" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
+
             <ul id="nav-list">
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#figma-projects">Figma Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
         <section class="hero">
             <div class="hero-content">
                 <h1>Hi, I'm <span>Ole Kristian Berge</span></h1>
@@ -30,27 +35,87 @@
                 This portfolio showcases a collection of my previous projects, each reflecting my growth,
                 creativity, and technical abilities.</p>
             </div>
+
             <div class="hero-content-right">
                 <img src="img/Uten_tittel-1_1_optimized_200.png" alt="Hero Image">
             </div>
         </section>
     </header>
+
     <div class="scroll-container">
-        <i id= "scroll-down"class="fa-solid fa-circle-down"></i>
+        <i id="scroll-down" class="fa-solid fa-circle-down"></i>
     </div>
-    <!-- Projects section -->
+
+    <!-- ABOUT + UX SKILLS SECTION -->
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <p class="about-text">
+            I'm a front-end developer and aspiring UX/UI designer who focuses on creating clean, 
+            intuitive and user-friendly digital experiences. My background in audiovisual media, 
+            communication and front-end development helps me bridge the gap between design, content 
+            and implementation. I enjoy working with both visuals and logic – turning ideas into 
+            real, interactive products.
+        </p>
+
+        <h3 class="skills-title">UX & Design Skills</h3>
+        <ul class="skills-list">
+            <li>User-centered design & basic user research</li>
+            <li>Wireframing & prototyping in Figma</li>
+            <li>UI design, layout and visual hierarchy</li>
+            <li>Accessibility and usability focus</li>
+            <li>Interaction design & responsive design</li>
+        </ul>
+
+        <a href="Ole_Kristian_Berge_CV_updated.pdf" target="_blank" class="resume-btn">Download My CV</a>
+    </section>
+
+    <!-- PROJECTS -->
     <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
-            <!-- Project 1 -->
+
+            <div class="project-card">
+                <img src="img/5-headphones-black.jpg" alt="Online Shop project">
+                <h3>Online Shop</h3>
+                <p>Online shop created using Next.js 14 (App Router), TypeScript, Tailwind CSS, and React Testing Library + Vitest.</p>
+                <a href="https://github.com/NoroffFEU/jsfw-2025-v1-ole-kristian-jsframeworks" target="_blank">GitHub Repo</a>
+                <a href="https://jsfw-2025-v1-ole-kristian-jsframewo.vercel.app/" target="_blank">Live Website</a>
+            </div>
+
+            <div class="project-card">
+                <img src="img/photo-1497316730643-415fac54a2af (1).avif" alt="CrimsonBid project">
+                <h3>CrimsonBid</h3>
+                <p>CrimsonBid is a front-end auction site built with plain HTML, CSS, and JavaScript. Visitors
+                can browse and search listings. Students who log in with a Noroff student email can create
+                their own listings, edit and delete them, and place bids on other listings.</p>
+                <a href="https://github.com/olekb2001/semester-project-2-auction-house" target="_blank">GitHub Repo</a>
+                <a href="https://olekb2001.github.io/semester-project-2-auction-house/" target="_blank">Live Website</a>
+            </div>
+
+            <div class="project-card">
+                <img src="img/foodfeed.jpeg" alt="The Food Feed project">
+                <h3>The Food Feed</h3>
+                <p>A blog platform for food lovers to explore and share their favorite recipes.</p>
+                <a href="https://github.com/olekb2001/FED1-PE1-olekb2001-final" target="_blank">GitHub Repo</a>
+                <a href="https://thefoodfeed.netlify.app" target="_blank">Live Website</a>
+            </div>
+
+            <div class="project-card">
+                <img src="img/Screenshot 2025-11-27 130831.png" alt="Social App project">
+                <h3>Social App</h3>
+                <p>This project is a social media app prototype built with a CSS framework called Tailwind on a dedicated branch named css-frameworks.</p>
+                <a href="https://github.com/olekb2001/css-frameworks-course-assignment/tree/css-frameworks" target="_blank">GitHub Repo</a>
+                <a href="https://olekb2001.github.io/css-frameworks-course-assignment/" target="_blank">Live Website</a>
+            </div>
+
             <div class="project-card">
                 <img src="img/rainydays.jpeg" alt="Rainy Days Project">
-                <h3>Rainy Days</h3>
+                <h3>Rainy Days – first front-end project</h3>
                 <p>An eCommerce site for outdoor jackets with a user-friendly shopping experience.</p>
                 <a href="https://github.com/olekb2001/Rainy-Days-project" target="_blank">GitHub Repo</a>
                 <a href="https://olekb2001.github.io/Rainy-Days-project/" target="_blank">Live Website</a>
             </div>
-            <!-- Project 2 -->
+
             <div class="project-card">
                 <img src="img/museum.jpg" alt="Science Museum Project">
                 <h3>Science Museum</h3>
@@ -58,23 +123,54 @@
                 <a href="https://github.com/olekb2001/Semester-Project" target="_blank">GitHub Repo</a>
                 <a href="https://olekb2001.github.io/Semester-Project/" target="_blank">Live Website</a>
             </div>
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="img/foodfeed.jpeg" alt="Exam Project">
-                <h3>The Food Feed</h3>
-                <p>A blog platform for food lovers to explore and share their favorite recipes.</p>
-                <a href="https://github.com/olekb2001/FED1-PE1-olekb2001-final" target="_blank">GitHub Repo</a>
-                <a href="https://67bb61ac347a7565251e18d7--thefoodfeed.netlify.app/" target="_blank">Live Website</a>
-            </div>
+
         </div>
-    </section>   
-    <!-- Contact section -->
+    </section>
+
+    <!-- FIGMA PROJECTS -->
+    <section class="projects" id="figma-projects">
+        <h2>Figma Projects</h2>
+        <div class="project-container">
+
+            <div class="project-card">
+                <img src="img/photo-1497316730643-415fac54a2af (1).avif" alt="CrimsonBid Figma">
+                <h3>CrimsonBid Figma file</h3>
+                <p>The Figma design and prototype file for CrimsonBid.</p>
+                <a href="https://www.figma.com/design/xmW1lifQDLq6IK2YsGiNjG/CrimsonBid?node-id=1-118&t=4l7L77m56BYczRDZ-1" target="_blank">View in Figma</a>
+            </div>
+
+            <div class="project-card">
+                <img src="img/foodfeed.jpeg" alt="The Food Feed Figma">
+                <h3>The Food Feed Figma file</h3>
+                <p>The Figma design and prototype file for The Food Feed.</p>
+                <a href="https://www.figma.com/design/DYeG7MhkUlVWJ4hDUR1qIW/The-Food-Feed?node-id=0-1&t=51uQnz3XtcwuSnoM-1" target="_blank">View in Figma</a>
+            </div>
+
+            <div class="project-card">
+                <img src="img/rainydays.jpeg" alt="Rainy Days Figma">
+                <h3>Rainy Days Figma file</h3>
+                <p>The Figma design and prototype file for Rainy Days.</p>
+                <a href="https://www.figma.com/design/iYsjijCXHJZmdFB8D8jrcD/Rainy-Days?node-id=0-1&t=rKEvDR3XgIChRvvG-1" target="_blank">View in Figma</a>
+            </div>
+
+            <div class="project-card">
+                <img src="img/museum.jpg" alt="Science Museum Figma">
+                <h3>Science Museum Figma file</h3>
+                <p>The Figma design and prototype file for Science Museum.</p>
+                <a href="https://www.figma.com/design/rfXvaJcyWRNdIfke4Erwmy/Bergen-Community-Science-Museum?node-id=0-1&t=QNOSg73D8MU5IXLy-1" target="_blank">View in Figma</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
     <section class="contact-section" id="contact">
         <h2>Contact</h2>
         <div class="contact-container">
             <div class="contact-info">
                 <h3>Get in Touch</h3>
                 <p>For inquiries, collaborations, or just to say hello, feel free to reach out via email or social media.</p>
+
                 <div class="social-links">
                     <div class="email-options">
                         <a href="https://www.linkedin.com/in/ole-kristian-berge-85a427335/" target="_blank" class="social-icon linkedin">
@@ -83,19 +179,21 @@
                         <a href="mailto:olekb2001@gmail.com" class="social-icon email">
                             <i class="fas fa-envelope"></i> Open Mail App
                         </a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=olekb2001@gmail.com" class="social-icon gmail" target="_blank">
-                            <i class="fas fa-envelope"></i> Open in Gmail
-                        </a>
-                        <a href="https://outlook.live.com/mail/deeplink/compose?to=olekb2001@gmail.com" class="social-icon outlook" target="_blank">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=olekb2001@gmail.com" target="_blank" class="social-icon gmail">
+                            <i class="fas fa-envelope"></i> Open in Gmail</a>
+                        <a href="https://outlook.live.com/mail/deeplink/compose?to=olekb2001@gmail.com" target="_blank" class="social-icon outlook">
                             <i class="fas fa-envelope"></i> Open in Outlook
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <script src="scroll-animation.js"></script>
     <script src="navbar.js"></script>
     <script src="card-animation.js"></script>
+
 </body>
 </html>

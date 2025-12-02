@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Lead Automation – Ole Kristian Berge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1f2c35d72.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Poppins:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="img/logo-portfolio.png" alt="Portfolio Logo">
+            <div class="hamburger-menu" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul id="nav-list">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#figma-projects">Figma Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- CLEAN HERO WITHOUT IMAGE -->
+        <section class="hero" style="text-align:center; justify-content:center;">
+            <div class="hero-content" style="max-width:700px;">
+                <h1>AI Lead <span>Automation</span></h1>
+                <p>
+                    This page demonstrates a full <span>AI-powered automation workflow</span> 
+                    built using HTML, CSS, Make.com, Google Sheets, and OpenAI. When you submit the form 
+                    below, the backend automatically stores your message, generates an AI summary, 
+                    and updates a structured CRM sheet.
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <!-- EXPLANATION SECTION -->
+    <section class="about-section">
+        <h2>Project Overview</h2>
+        <p class="about-text">
+            This project simulates a real-world lead management system. It captures user messages,
+            organizes them in a CRM, and uses AI to instantly understand the intent and suggest next actions.
+            This demonstrates how automation and AI can reduce manual workload for businesses.
+        </p>
+
+        <h3 class="skills-title">How It Works</h3>
+        <ul class="skills-list">
+            <li>User submits the form below.</li>
+            <li>A Make.com webhook receives the data.</li>
+            <li>Make creates a new row in Google Sheets.</li>
+            <li>OpenAI generates a summary and identifies intent.</li>
+            <li>The sheet row is updated with AI insights.</li>
+        </ul>
+    </section>
+
+    <!-- LIVE DEMO FORM -->
+    <section class="contact-section">
+        <h2>Try the AI Lead Form</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Live Demo</h3>
+                <p>
+                    Send a test message using this form. Behind the scenes, an AI-enhanced workflow 
+                    processes your message, stores it, and enriches it automatically.
+                </p>
+            </div>
+
+            <form class="contact-form" action="https://hook.eu1.make.com/9mqh44jvrqsa2csukv4etv1qbb6yw7tw" method="POST">
+                <h3>Send a Test Lead</h3>
+                <input type="text" name="name" placeholder="Your name" required />
+                <input type="email" name="email" placeholder="Your email" required />
+                <textarea name="message" placeholder="What can I help you with?" rows="4" required></textarea>
+                <button type="submit">Send</button>
+                <p style="margin-top:10px;font-size:14px;opacity:0.8;">
+                    Your message is processed by Make.com and AI in the background.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- OPTIONAL GOOGLE SHEET DEMO -->
+    <section class="projects">
+    <h2>Demo CRM (Google Sheet Preview)</h2>
+        <div class="project-container">
+            <div class="project-card show" style="width:90%;max-width:900px;">
+                <p>
+                    Below is a preview of a demo CRM sheet that represents how live data is 
+                    stored and enriched by the automation system.
+                </p>
+                <!-- Demo sheet image -->
+                <img src="img/crm-sheet.png" 
+                    alt="CRM Google Sheet Preview" 
+                    style="width:100%;border-radius:10px;margin-top:15px;">
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+    <h2>Make.com Scenario</h2>
+        <div class="project-container">
+            <div class="project-card show" style="width:90%;max-width:900px;">
+                <p>This is the Make.com scenario behind the automation:</p>
+
+                <img src="img/workflow-make.png" 
+                    alt="Make.com Automation Workflow"
+                    style="width:100%;border-radius:10px;margin-top:15px;">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+        <h2>My Responsibilities</h2>
+        <ul class="skills-list">
+            <li>Developed the front-end form and implemented clean UI/UX.</li>
+            <li>Built Make.com workflows for webhook, Google Sheets, and OpenAI integration.</li>
+            <li>Designed the CRM structure and automated lead management process.</li>
+            <li>Engineered prompt logic for accurate AI summarization.</li>
+        </ul>
+    </section>
+
+    <section class="contact-section">
+        <h2>Interested in Automation?</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>
+                    Want something similar for your business? Or want to see more technical details?
+                    Feel free to reach out.
+                </p>
+
+                <div class="social-links">
+                    <div class="email-options">
+                        <a href="https://www.linkedin.com/in/ole-kristian-berge-85a427335/" 
+                           target="_blank" class="social-icon linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:olekb2001@gmail.com" class="social-icon email">
+                            <i class="fas fa-envelope"></i> Email</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=olekb2001@gmail.com" 
+                           target="_blank" class="social-icon gmail">
+                            <i class="fas fa-envelope"></i> Gmail</a>
+                        <a href="https://outlook.live.com/mail/deeplink/compose?to=olekb2001@gmail.com" 
+                           target="_blank" class="social-icon outlook">
+                            <i class="fas fa-envelope"></i> Outlook</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="navbar.js"></script>
+</body>
+</html>
